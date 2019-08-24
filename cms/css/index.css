@@ -1,0 +1,380 @@
+/*====================================== reset.css is here ========================================*/
+*{margin:0; padding:0; box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box; }
+*:after,*:before{box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;}
+table {	border-collapse:collapse; border-spacing:0;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,strong,th,var {font-style:normal; font-weight:normal; }
+ol,ul { list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {	font-size:100%;	font-weight:bold;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+.clear{clear:both; font-size:1px;line-height:1px; display:block; height:0;}
+.clearfix:after{content:"";display:block;clear:both;}
+.last	{margin:0 !important;}
+.pad_last{padding:0 !important;}
+.no_bg {background:none !important;}
+.no_bor{border:0 none !important; }
+header,nav,section,article,aside,footer,hgroup,figure {display: block; }
+/**************************************************************************************/
+a {color:#000; text-decoration:none; outline:0 none !important; }
+a:hover, a:focus {color:#000;  text-decoration:none; outline:0 none !important;}
+h1 {font-size:24px;}
+h2 {font-size:22px;}
+h3 {font-size: 16px;}
+h4 {font-size:16px;}
+h5 {font-size:14px;}
+h6 {font-size:12px;}
+/*---------------------------------------------------*/
+html {}
+body {color:#000000; font-family:"Arial", Verdana, Tahoma; font-size:16px;}
+.flt-lt {float:left;}
+.flt-rt {float:right;}
+.wrapper{background: url(../images/bg.jpg);height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+.wrapper1{background: none !important;}
+header{
+    padding: 15px 30px 0px;
+    position: fixed;
+    width: 100%;
+}
+.header-main{
+
+}
+.header-left{width: 15%;display: inline-block;float: left;}
+.header-right{width: 85%;display: inline-block;float: right;}
+.header-left a img{height: auto;}
+.header-left a img.img2{height: auto;display: none;}
+
+nav ul{}
+nav ul li{display: inline-block;padding: 0px 0px;}
+nav ul li a {color: #fff;font-size: 14px;line-height: 16px;text-decoration: none;text-transform: uppercase;position: relative;}
+nav ul li a:hover{color: red;}
+nav ul li a::after {width: 100px;background: red;content="";position: absolute;top:0;left:0;right: 0;height: 2px;}
+.unwind{
+    padding: 250px 0 250px;
+}
+.unwind-in{}
+.unwind-in h2{font-size: 50px;line-height: 1px;color: #fff;text-align: center;font-weight: 600;font-family: arial;}
+.unwind-in a{width: 200px;height: 50px;line-height: 50px;font-size: 20px;color: #fff;margin: 0 auto;border: none;background: red;text-align: center;display: block;transition: all 0.3s ease;box-shadow: 1px 1px 5px 5px #e62b1e;}
+.unwind-in a:hover{color: red;background: #fff;}
+.about{background: #1a15a0;padding: 40px 0 0 0;}
+.about-in{max-width: 600px;margin: 0 auto;}
+.ted{padding: 0 0 40px;}
+.ted h2{    margin-top: 70px;font-size: 30px;color: red;text-align: center;line-height: 32px;padding: 0 0 0px;}
+.ted p{font-size: 18px;color: #fff;text-align: left;line-height: 24px;padding: 0 0 0 0px;}
+.ted span{font-size: 12px;color: #fff;text-align: left;line-height: 14px;padding: 0 0 0 0px;display: block;padding: 0 0 40px;text-align: center;}
+.sticky-header header{position:fixed;width: 100%;z-index: 99999;background: #fff;}
+.sticky-header header nav ul li a{color:#000;padding: 0 0 0px;}
+.sticky-header header nav{padding: 13px 0 0;}
+.sticky-header .header-left a img.img2{display: block;width: 200px;padding: 0 0 10px;}
+.sticky-header .header-left a img.img1{display: none;}
+.sticky-header .header-left a img.img1{display: none;}
+
+
+.side_bar{position: fixed;right: -250px;width: 250px;height: 100%;padding: 30px 20px;text-align: center;background: #000000;z-index: 99;}
+.menu-icon{line-height: 0;}
+.menu-icon a{width: 57px;height: 40px;display: inline-block;}
+.menu-icon a span{width: 47px;height: 3px;background: #fff;margin: 8px 5px;-webkit-transition-duration: 0.4s;-moz-transition-duration: 0.4s;transition-duration: 0.4s;border-radius: 2px;top: 10px;}
+.open .menu-icon a span:first-child {position: absolute;transform: rotate(-45deg);-webkit-transform: rotate(-45deg);-o-transform: rotate(-45deg);-ms-transform: rotate(-45deg);-moz-transform: rotate(-45deg);}
+.open .menu-icon a span:nth-child(2) {position: absolute;transform: rotate(45deg);-webkit-transform: rotate(45deg);-o-transform: rotate(45deg);-ms-transform: rotate(45deg);-moz-transform: rotate(45deg);}
+.open .menu-icon a span:last-child {position: absolute;right: 20px;opacity: 0;visibility: hidden;}
+/* flip car code */
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin: 0 auto;
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  border-radius: 50px;
+  object-fit: contain;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 50px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flipcard-in{
+    position: relative;
+}
+.flipcard-in .person-content{
+    bottom: 30px;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  height: 296px;
+   
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+  height: 297px;
+  padding: 20px 0 0;
+}
+.column {
+  float: left;
+  width: 33.33%;
+}
+.row1 .column {
+width: 25%;
+}
+
+.flip-card1 {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+  margin: 0 auto 30px;
+  border-radius: 50px;
+  object-fit: contain;
+  /* padding: 0 0 16px 0; */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+ 
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+
+/* Position the front and back side */
+.flip-card-front1{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front1 {
+  background-color: #bbb;
+  color: black;
+  height: 296px;
+position: relative;
+}
+
+/* Style the back side */
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+.flip-card-front1 img{
+    -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+.flip-card1:hover .flip-card-front1 img{
+     -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+border: 2px solid red;
+}
+.flip-card1:hover .person-content{
+    right: -10px;
+}
+.row{
+    margin: 0;
+}
+.person-content{
+    position: absolute;
+    bottom: 38px;
+    right: 0;
+    width: 200px;
+    background: red;
+    padding: 5px 10px;
+    /* height: 54px; */
+    color: #fff;
+}
+.person-content h3{
+    padding: 0 0 5px;
+    line-height: 18px;
+    margin: 0;
+}
+.person-content p{
+   
+    margin: 0;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* srini */
+.text-align-center {
+    text-align: center;
+}
+.header-red-color {
+    color: #e62b1e !important;
+}
+.oj-header-border {
+    border: 0px !important;
+    padding: 0 0 7px;
+}
+.oj-sm-justify-content-center {
+    justify-content: center;
+}
+.oj-flex {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-follow-button-icon {
+    height: 75px !important;
+    width: 75px !important;
+    border-radius: 1em !important;
+    border: 2px solid #e62b1e;
+    transition: all 0.2s ease;
+     padding: 10px;
+    cursor: pointer;
+    background: white;
+}
+.oj-hybrid-applayout-header, .oj-hybrid-applayout-header-no-border, .oj-sm-align-items-center {
+    align-items: center;
+}
+.oj-sm-justify-content-center {
+    justify-content: center;
+}
+.oj-flex {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.home-follow-button-icon:hover {
+    /* border-width: 0px; */
+    background: #e62b1e !important;
+   
+}
+.home-follow-button-icon:hover a{color: #fff !important;}
+.home-follow-button-icon a{font-size: 35px}
+.home-follow-button-icon {
+    height: 75px !important;
+    width: 75px !important;
+    border-radius: 1em !important;
+    border: 2px solid #e62b1e;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    background: white;
+}
+.oj-padding {
+    padding: 10px;
+}
+.oj-margin {
+    margin: 10px;
+}
+
+.header-tab-bar .oj-tabbar-item-element.oj-selected .selected-tab-anim {
+    display: block !important;
+}
+.selected-tab-anim {
+    display: none !important;
+    position: absolute !important;
+    bottom: 0px !important;
+    width: 100% !important;
+}
+.selected-tab-anim div {
+    animation: sel-tab-anim 2s linear infinite;
+}
+.contact{
+    padding: 20px 0 0 0;
+    background: #000;
+}
+.home-follow-button-icon{
+    margin: 0 15px;
+}
+.oj-padding input{
+    padding: 10px 10px;
+    height: 40px;
+}
+.oj-button-label{
+    background: red;
+    border: red;
+    width: 100px;
+    border-radius: 5px;
+    color: #fff;
+}
+.oj-button-button{
+    border: none;
+    background: red;
+}
+.container{
+    padding: 0 15px;
+}
+div#feedback{
+    margin: 80px 0 0 0;
+}
+
+
+
+
+
+.wrapper2{
+    background: url(../images/bgimg.jpg);
+/*
+    width: 100%;
+    background-size: cover;
+    padding: 0 0 315px;
+    background-repeat: no-repeat;
+*/
+     /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper2 .oj-margin{
+    margin: 0 !important;
+}
+.oj-flex-item1{
+    padding: 20px 0 200px 0;
+}
+.let a{
+    width: 200px;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    color: red;
+    border: 2px solid red;
+    margin: 0 auto;
+    background: black;
+    text-align: center;
+    border-radius: 10px;
+}
